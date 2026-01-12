@@ -34,8 +34,8 @@ export default function Index() {
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <img 
-              src="https://cdn.poehali.dev/files/Рисунок1.png" 
-              alt="Urban Play Logo" 
+              src="https://cdn.poehali.dev/files/2026-01-12_12-07-58.png" 
+              alt="XZDesign Logo" 
               className="h-12 w-auto"
             />
             <div className="hidden md:flex items-center gap-8">
@@ -116,7 +116,7 @@ export default function Index() {
             <div className="relative animate-scale-in">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl"></div>
               <img
-                src="https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/041ebcc1-e188-42ed-ac8b-a9e0e6366867.jpg"
+                src="https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/6fc22dea-f3b1-418e-8451-fd0c681658ae.jpg"
                 alt="Design workspace"
                 className="relative rounded-3xl shadow-2xl w-full h-[600px] object-cover"
               />
@@ -136,7 +136,7 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <img
-              src="https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/a9842539-edcc-4fa1-93f6-fb3639e78118.jpg"
+              src="https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/5006974d-2b2b-46b2-848f-93a37a5e9e2e.jpg"
               alt="Our team"
               className="rounded-3xl shadow-xl w-full h-[500px] object-cover hover:scale-105 transition-transform duration-500"
             />
@@ -193,12 +193,12 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: 'Брендинг для стартапа', category: 'Айдентика', color: 'primary' },
-              { title: 'Рекламная кампания', category: 'Баннеры', color: 'secondary' },
-              { title: 'Корпоративная полиграфия', category: 'Полиграфия', color: 'primary' },
-              { title: 'Иллюстрации для блога', category: 'Иллюстрации', color: 'secondary' },
-              { title: 'Упаковка продукта', category: 'Дизайн', color: 'primary' },
-              { title: 'SMM-графика', category: 'Соцсети', color: 'secondary' },
+              { title: 'Брендинг для стартапа', category: 'Айдентика', color: 'primary', image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/628c11e6-1e0d-42fd-b8bb-62bb470c3dec.jpg' },
+              { title: 'Рекламная кампания', category: 'Баннеры', color: 'secondary', image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/a3bc8463-09a6-4865-b735-bbc5e2a06bbc.jpg' },
+              { title: 'Корпоративная полиграфия', category: 'Полиграфия', color: 'primary', image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/6fc22dea-f3b1-418e-8451-fd0c681658ae.jpg' },
+              { title: 'Иллюстрации для блога', category: 'Иллюстрации', color: 'secondary', image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/628c11e6-1e0d-42fd-b8bb-62bb470c3dec.jpg' },
+              { title: 'Упаковка продукта', category: 'Дизайн', color: 'primary', image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/5006974d-2b2b-46b2-848f-93a37a5e9e2e.jpg' },
+              { title: 'SMM-графика', category: 'Соцсети', color: 'secondary', image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/a3bc8463-09a6-4865-b735-bbc5e2a06bbc.jpg' },
             ].map((project, index) => (
               <Card
                 key={index}
@@ -207,7 +207,7 @@ export default function Index() {
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden h-64">
                     <img
-                      src="https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/d2117d79-7bc9-4d39-95f0-da1601e07e62.jpg"
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
@@ -301,9 +301,9 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: 'Анна Смирнова', role: 'Арт-директор', experience: '8 лет опыта' },
-              { name: 'Максим Петров', role: 'Графический дизайнер', experience: '6 лет опыта' },
-              { name: 'Елена Васильева', role: 'Иллюстратор', experience: '5 лет опыта' },
+              { name: 'Анна Смирнова', role: 'Арт-директор', experience: '8 лет опыта', image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/1b0d785c-fcc0-43f9-913e-89d8683550d4.jpg' },
+              { name: 'Максим Петров', role: 'Графический дизайнер', experience: '6 лет опыта', image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/a66c233c-4291-46b5-8e6b-23484554ffcf.jpg' },
+              { name: 'Елена Васильева', role: 'Иллюстратор', experience: '5 лет опыта', image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/3363dc86-8971-4ae5-93ca-3045dc8ab29b.jpg' },
             ].map((member, index) => (
               <Card
                 key={index}
@@ -312,7 +312,7 @@ export default function Index() {
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden h-80">
                     <img
-                      src="https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/a9842539-edcc-4fa1-93f6-fb3639e78118.jpg"
+                      src={member.image}
                       alt={member.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
@@ -395,16 +395,19 @@ export default function Index() {
                 title: 'Тренды графического дизайна 2024',
                 date: '15 января 2024',
                 category: 'Тренды',
+                image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/628c11e6-1e0d-42fd-b8bb-62bb470c3dec.jpg'
               },
               {
                 title: 'Как выбрать цветовую палитру для бренда',
                 date: '10 января 2024',
                 category: 'Брендинг',
+                image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/a3bc8463-09a6-4865-b735-bbc5e2a06bbc.jpg'
               },
               {
                 title: '10 правил эффективного баннера',
                 date: '5 января 2024',
                 category: 'Реклама',
+                image: 'https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/6fc22dea-f3b1-418e-8451-fd0c681658ae.jpg'
               },
             ].map((post, index) => (
               <Card
@@ -414,7 +417,7 @@ export default function Index() {
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden h-48">
                     <img
-                      src="https://cdn.poehali.dev/projects/a8412a73-a2c8-4334-9263-ba6d950e170f/files/041ebcc1-e188-42ed-ac8b-a9e0e6366867.jpg"
+                      src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
@@ -554,7 +557,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-white/20 pt-8 text-center text-white/80">
-            <p>© 2024 Urban Play. Все права защищены.</p>
+            <p>© 2024 XZDesign. Все права защищены.</p>
           </div>
         </div>
       </footer>
