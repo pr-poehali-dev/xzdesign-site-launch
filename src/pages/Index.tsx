@@ -517,8 +517,8 @@ export default function Index() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <img 
-                src="https://cdn.poehali.dev/files/Рисунок1.png" 
-                alt="Urban Play Logo" 
+                src="https://cdn.poehali.dev/files/2026-01-12_12-07-58.png" 
+                alt="XZDesign Logo" 
                 className="h-16 w-auto mb-4 brightness-0 invert"
               />
               <p className="text-white/80">Креативный графический дизайн для вашего бизнеса</p>
