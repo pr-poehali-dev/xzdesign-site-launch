@@ -33,9 +33,11 @@ export default function Index() {
       >
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              XZDesign
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/files/Рисунок1.png" 
+              alt="Urban Play Logo" 
+              className="h-12 w-auto"
+            />
             <div className="hidden md:flex items-center gap-8">
               {['home', 'about', 'portfolio', 'services', 'team', 'process', 'blog', 'contact'].map(
                 (section) => (
@@ -511,7 +513,11 @@ export default function Index() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="text-3xl font-bold mb-4">XZDesign</div>
+              <img 
+                src="https://cdn.poehali.dev/files/Рисунок1.png" 
+                alt="Urban Play Logo" 
+                className="h-16 w-auto mb-4 brightness-0 invert"
+              />
               <p className="text-white/80">Креативный графический дизайн для вашего бизнеса</p>
             </div>
             <div>
@@ -548,7 +554,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-white/20 pt-8 text-center text-white/80">
-            <p>© 2024 XZDesign. Все права защищены.</p>
+            <p>© 2024 Urban Play. Все права защищены.</p>
           </div>
         </div>
       </footer>
